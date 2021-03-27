@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,500,600,700|Droid+Serif:400,400i,700,700i|Montserrat:500,600,700');
+
+.big-heading{
+font-size: 40pt;
+line-height:normal;
+}
+.sub-heading{
+font-size: 30pt;
+line-height:normal;
+}
+.big-heading-droid{
+font-family: 'Droid Serif', serif;
+font-size: 40pt;
+font-weight:700;
+line-height:normal;
+}
+.sub-heading-droid{
+font-family: 'Droid Serif', serif;
+font-style:italic;
+font-size: 30pt;
+font-weight:400;
+line-height:normal;
+}
+.big-heading-monst{
+font-family: 'Montserrat', sans-serif;
+font-size: 40pt;
+font-weight:700;
+line-height:normal;
+}
+.sub-heading-monst{
+font-family: 'Montserrat', sans-serif;
+font-size: 30pt;
+font-weight:400;
+line-height:normal;
+}
+.btn-slider { 
+display:block;
+width: 198px;
+height: 40px;
+font-size:10pt;
+font-weight:400;
+letter-spacing:1pt;
+font-style:normal;
+text-align:center;
+line-height:35px;
+color:#fff;
+border:2px solid rgba(0,0,0,0);
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+outline: none;
+text-shadow:none;
+margin: 30px auto;
+padding: 0;
+cursor:pointer;
+-moz-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+.btn-slider:hover { 
+background:rgba(0,0,0,0);
+border:2px solid #fff;
+-moz-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;}
+  .btn-slider a:hover { color:#fff; } 

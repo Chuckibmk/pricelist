@@ -1,0 +1,94 @@
+/* jQuery Countdown styles 2.0.0. */
+/* modified */
+.is-countdown {
+}
+.countdown-rtl {
+	direction: rtl;
+}
+.countdown-holding span {
+	color: #fff;
+}
+.countdown-row {
+	clear: both;
+	width: 100%;
+	padding: 0px 2px;
+	text-align: center;
+}
+.countdown-show1 .countdown-section {
+	width: 98%;
+}
+.countdown-show2 .countdown-section {
+	width: 48%;
+}
+.countdown-show3 .countdown-section {
+	width: 32.5%;
+}
+.countdown-show4 .countdown-section {
+	width: 24.5%;
+}
+.countdown-show5 .countdown-section {
+	width: 19.5%;
+}
+.countdown-show6 .countdown-section {
+	width: 16.25%;
+}
+.countdown-show7 .countdown-section {
+	width: 14%;
+}
+.countdown-section {
+	display: block;
+	font-size: 16px;
+	text-align: center;
+}
+.countdown-amount {
+	font-weight:300;
+    font-size: 48px;
+}
+.countdown-period {
+	font-family:"Lato";
+    display: block;
+	width:70px;
+	margin:0 auto;
+	margin-top:5px;
+	font-weight:bold;
+}
+.countdown-descr {
+	display: block;
+	width: 100%;
+}
+
+.countdown-round{
+	display:inline-block;
+	text-align:center;
+	margin:0 auto;
+}
+
+.countdown-round .countdown-show4 .countdown-section {
+	width: 120px;
+	height:120px;
+	display:inline-block;
+	background:none;
+	border:solid 2px rgba(255,255,255,.2);
+	padding:50px 0 10px 0;
+	margin:0 25px 30px 25px;
+	border-radius:90px;
+	-moz-border-radius:90px;
+	-webkit-border-radius:90px;
+}
+
+.countdown-round .countdown-amount {
+	font-weight:500;
+	margin:0;
+	font-size:40px;
+	line-height:0;
+	padding:0;
+}
+
+.countdown-round .countdown-period {
+	width:auto;
+	margin:0 auto;
+	padding:0;
+	font-weight:300;
+	font-size:16px;
+	line-height:20px;
+}

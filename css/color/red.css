@@ -1,0 +1,65 @@
+/* color */
+.color,
+.big-icon,
+.features-1 span,
+.star-content i,.personal .name,
+.service-list li span, 
+.offer-img .hovereffect .overlay .v-align span.price, 
+.recent-pos-2 .content a, 
+.error, .success, 
+.social-icons span:hover, 
+.blog-simple .blog-text span.date-post i, 
+.blog-simple .blog-text span.user-post i, 
+.blog-simple .blog-text span.comment a i, 
+.comment-info .c-reply, 
+.comment-info .c-date i  
+{ color:#ff1744;}
+
+/* background */
+#preloadbar,
+.big-icon:hover,
+.btn-home,
+.btn-content,
+.btn-gallery,
+.btn-blog,
+nav ul ul li a:hover, 
+.features:hover,
+.skillbar-title,
+.skillbar-title span,
+.skillbar-bar,
+.overlay div span.icon a:hover i, 
+.wrap-price-yellow, 
+.recent-pos-2 .num, 
+.team .hovereffect .overlay, 
+.team .hovereffect:hover .overlay, 
+#form-contact button.btn, .btn-form, 
+#totop:hover, 
+.bottom-article a.btn, 
+#pagination a.current, 
+.input-group span.icon, 
+#commentform button.btn, 
+.tp-bannertimer,
+.btn-slider,
+.pro-btn:hover, .pro-btn-next:hover
+{background:#ff1744;}
+
+nav ul ul li a:hover {background: #ff1744!important;}
+
+/* border */
+.about-icon span, 
+address span i:hover
+{ border-color:#ff1744;}
+
+.team .devider-recent-2, 
+.mainpreloader span,
+.mainpreloader span
+{border-top-color:#ff1744;}
+
+.wrap-price-image .price-yellow,
+.recent-pos-2 .devider-heading-left,
+.devider-heading-left,
+nav a:hover,
+nav a.actived,
+.devider-widget,
+.devider-heading-center
+{border-bottom-color:#ff1744;}
