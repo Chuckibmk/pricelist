@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+﻿<?php
+  require_once 'inc/config.php';
+
+  
+
+?>
+
+<!DOCTYPE html>
 <html lang="zxx">
   <head>
     <meta charset="utf-8">
@@ -105,21 +112,31 @@
                       Find Your Favourite Prices.
                       </p>
       
-                      <form action="#" class="row" id="form-contact" name="form-contact" method="post">
+                      <form action="results.php" class="row" id="form-contact" name="form-contact" method="GET">
 
                         <input id="name-contact" name="item" placeholder="Item" type="text"> 
 
+
+                        <!-- this category is under serious contemplation, its use might be stopped
+                          but de commented options is just for learning-->
                         <select name="category" class="w-100">
-                          <option value="1">Gadgets</option>
+                          <!-- <option value="1">Gadgets</option>
                           <option value="2">Clothing</option>
                           <option value="3">Utensils</option>
                           <option value="4">Sports</option>
-                          <option value="5">Equipment</option>
+                          <option value="5">Equipment</option> -->
+                          <option>admin</option>
+                          <option>comments</option>
+                          <option>contacts</option>
+                          <option>posts</option>
+                          <option>users</option>
+                          <option>replies</option>
+
                         </select> 
                         <!-- <textarea cols="50" id="message-contact" name="message" placeholder="your enquiry" rows="4"></textarea> -->
 
                         <div class="btn-home onStep" data-animation="fadeInUp" data-time="800">
-                          <a href="results.php" class="scroll-link" type="submit" name="submit">Search</a>
+                          <input class="scroll-link" type="submit" value="Search">
                         </div>
                       </form>
                   </div>

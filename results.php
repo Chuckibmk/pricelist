@@ -1,3 +1,14 @@
+<?php
+  require_once 'inc/config.php';
+
+  $response = search();
+
+  if ($response) {
+    $rslt = $response;
+  }
+  
+?>
+
 <!DOCTYPE html>
 <html lang="zxx">
   <head>
@@ -109,32 +120,37 @@
       
       <!-- section blog -->      
       <section id="blog">  
-          <div class="container"> 
-              <div class="row">
-              
-                <div class="col-md-12">
-                  <h3 class="devider-heading">Results
-                  <span class="devider-heading-center"></span>
-                  </h3>
-                </div>
-               
-                <!-- spacer -->
-                <div class="space-double"></div>
-                
-                <div class="no-gutter">
-                
+        <div class="container"> 
+          <div class="row">
+          
+            <div class="col-md-12">
+              <h3 class="devider-heading">Results
+              <span class="devider-heading-center"></span>
+              </h3>
+            </div>
+            
+            <!-- spacer -->
+            <div class="space-double"></div>
+            
+            <div class="no-gutter">
+
+              <?php
+                  if (!empty($rslt)){
+                    foreach ($rslt as $rslt) {
+                      extract($rslt);?>
+            
                   <div class="col-md-12">
-                    <div class="image onStep" data-animation="fadeInRight" data-time="100" style="background-image:url(img/recent/img1.jpg)">
+                    <div class="image onStep" data-animation="fadeInRight" data-time="100" style="background-image:url(img/car/<?= $post_image;?>)">
                       <div class="recent-pos-2 v-align">
-                        <div class="num">01</div>
+                        <div class="num">1</div>
                           <div class="content">
                             <!-- Address path -->
                             <div class="date">www.jumia.com.ng > <span>smartphones</span></div>
                               <!-- item name  -->
-                              <div class="title"> Samsung Galaxy S21
+                              <div class="title"><?= $post_title; ?>
                                 <span class="devider-heading-left"></span>
                                 <!-- Item Description from Source site -->
-                                <p class="desc">Samsung S21 (2021) Dual Sim, FM Radio, Torch, 800mAh battery....</p>
+                                <p class="desc"><?=substr($post_body, "0", "150");?></p>
                                 <!-- item price -->
                                 <p class="desc">Price | $1,300</p>
                                 <!-- Link to the item Webpage -->
@@ -144,55 +160,12 @@
                       </div>
                     </div>
                   </div>
-                
-                <div class="col-md-12">
-                    <div class="image onStep" data-animation="fadeInRight" data-time="200" style="background-image:url(img/recent/img2.jpg)">
-                      <div class="recent-pos-2 v-align">
-                        <div class="num">02</div>
-                          <div class="content">
-                            <!-- Address path -->
-                            <div class="date">www.Konga.com.ng > <span>smartphones</span></div>
-                              <!-- item name  -->
-                              <div class="title"> Samsung Galaxy S21
-                                <span class="devider-heading-left"></span>
-                                <!-- Item Description from Source site -->
-                                <p class="desc">Samsung S21 (2021) Dual Sim, FM Radio, Torch, 800mAh battery....</p>
-                                <!-- item price -->
-                                <p class="desc">Price | $1,500</p>
-                                <!-- Link to the item Webpage -->
-                                <a class="readmore" href="blog.html">Read more <i class="fa fa-angle-right"></i></a>
-                              </div>
-                          </div>
-                      </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-12">
-                    <div class="image onStep" data-animation="fadeInRight" data-time="300" style="background-image:url(img/recent/img3.jpg)">
-                      <div class="recent-pos-2 v-align">
-                        <div class="num">03</div>
-                          <div class="content">
-                            <!-- Address path -->
-                            <div class="date">www.Jiji.com.ng > <span>smartphones</span></div>
-                              <!-- item name  -->
-                              <div class="title"> Samsung Galaxy S21
-                                <span class="devider-heading-left"></span>
-                                <!-- Item Description from Source site -->
-                                <p class="desc">Samsung S21 (2021) Dual Sim, FM Radio, Torch, 800mAh battery....</p>
-                                <!-- item price -->
-                                <p class="desc">Price | $1,250</p>
-                                <!-- Link to the item Webpage -->
-                                <a class="readmore" href="blog.html">Read more <i class="fa fa-angle-right"></i></a>
-                              </div>
-                          </div>
-                      </div>
-                    </div>
-                </div>
-                
-                </div>
-              
-              
-              </div>
+              <?php } }?>
+            
+            </div>
+          
+          
+          </div>
         </div>
      </section>
       <!-- blog end -->
